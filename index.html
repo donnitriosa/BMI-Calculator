@@ -1,0 +1,148 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Calculator BMI</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Calculator BMI adalah aplikasi yang digunakan untuk menghitung berat badan ideal seseorang" />
+      <meta name="author" content="Donni Triosa" />
+
+      <!-- add favicon -->
+      <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+      <!-- This Is Header -->
+      <!-- fist div is title -->
+      <!-- second div is navigation -->
+      <header>
+        <nav>
+          <div class="header-item title">Triosa Corp</div>
+          <div class="header-item">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- this is the main -->
+      <main>
+        <h3>Calculator BMI</h3>
+        <div class="container">
+
+          <!-- container item for form in the left posisition -->
+          <div class="container-item">
+            <p>
+              Berat badan ideal adalah impian adalah impian setiap orang. 
+              Tidak hanya memiliki tubuh yang menunjang penampilan, 
+              berat badan ideal juga menandakan kondisi tubuh yang sehat.
+              Bagaimana denganmu? Yuk, hitung sekarang di kalulator BMI.
+            </p>
+            <form>
+              <div class="form-group">
+                <label for="sex">Jenis Kelamin</label>
+                <div class="radio-group">
+                  <input type="radio" id="Male" name="sex" value="male">
+                  <label for="Male">Pria</label>
+                  <input type="radio" id="Female" name="sex" value="female">
+                  <label for="Female">Wanita</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="age">Usia (tahun)</label>
+                <input type="number" id="age" name="age" />
+              </div>
+              <div class="form-group">
+                <label for="weight">Berat Badan (kg)</label>
+                <input type="number" id="weight" name="weight" />
+              </div>
+              <div class="form-group">
+                <label for="height">Tinggi Badan (cm)</label>
+                <input type="number" id="height" name="height" />
+              </div>
+              <div class="form-group button-group">
+                <button type="submit" class="button-submit">Hitung BMI</button>
+                <button type="reset" class="button-reset">Reset</button>
+              </div>
+            </form>
+            <p>
+              Keunggulan Fitur:
+              <ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+              </ol>
+            </p>
+            <p>
+              kalkulator ini hanya boleh digunakan oleh orang dewasa 
+              (Wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI) 
+              dan tidak ada tindakan yang harus diambil berdasarkan nilainya 
+              selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter
+            </p>
+            <p>
+              kalkulator akan memberi ada gambaran tentang perbandingan berat badan 
+              anda dengan nilai umum. Index Masa Tubuh (BMI) dihitung sebagai berat 
+              badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda 
+              (dalam meter) atau BMI= kg/M<sup>2</sup>.
+            </p>
+          </div>
+
+          <!-- container for result in the right posisition -->
+          <div class="container-item">
+            <h5>Hasil Perhitungan BMI</h5>
+            <div class="result">
+              <p>
+                <span id="result">Category</span>
+              </p>
+              <h2 id="bmi-result">0</h2>             
+              <p>
+                <span id="status-result">Status Berat Badan</span>
+              </p>
+              <div class="form-group">
+                <button type="submit" class="button-submit">Download Hasil BMI</button>
+              </div>
+            </div>
+            <p>
+              <span id="between"></span>
+            </p>
+            <div class="form-group">
+              <button type="submit" class="button-submit">Konsultasi Ahli Gizi Via Aplikasi</button>
+              <button type="reset" class="button-submit">Register Online Ahli Gizi</button>
+            </div>
+            <p>
+              BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko
+              penyakit seseorang. Anda perlu konsultasi dengan dokter untuk mengetahui lebih lanjut 
+              mengenai risiko dan kekhawatiran anda terkait dengan berat badan anda.
+            </p>
+            <div class="result">
+              <p>
+                <span>Beberapa penyakit yang berasal dari kegemukan:</span><br>
+                <span>Diabetes</span><br>
+                <span>Hipertensi</span><br>
+                <span>Penyakit Jantung</span><br>
+                <span>Osteoathritis</span><br>
+              </p>
+              <div class="form-group">
+                <button type="submit" class="button-submit">Konsultasi Dokter Via Aplikasi</button>
+                <button type="reset" class="button-submit">Register Online Sekarang</button>
+              </div>
+            </div>
+            <!-- load image download from asset -->
+            <!-- image playstore in the left and appstore in the right -->
+            <div class="image-group">
+              <img src="assets/playstore.png" alt="playstore" />
+              <img src="assets/appstore.png" alt="appstore"/>
+          </div>
+        </div>
+      </main>
+
+      <!-- this is the footer -->
+      <footer>
+        <div class="footer-item"> © 2024 Triosa Corp | by. <a target="_blank" href="https://www.linkedin.com/in/donnitriosa/">Donni Triosa</a></div>
+      </footer>
+
+      <script src="js/script.js"></script>
+    </body>
+  </html>
