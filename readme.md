@@ -51,12 +51,6 @@ BMI Calculator is a web application that helps users calculate their Body Mass I
 
 - Determine if the user's weight is ideal
 
-- Provide guidance for weight management
-
-- Offer additional resources for consulting with nutritionists and doctors
-
-- Download BMI results
-
 - Mobile-friendly design
 
 ## Technologies Used
